@@ -14,19 +14,29 @@
   <main>
     <div class="left-bar">
       <ul>
-        <li class="nav-item"><em class="fas fa-home"></em> <a class="nav-links" href="#">
-          Dashboard
+        <li class="nav-item active"><em class="fas fa-home"></em><span>Dashboard
+        </span></li>
+        
+        <li class="nav-item"><em class="fas fa-user-friends"></em> <a class="nav-links" href="#">
+          Pacientes
         </a></li>
-        <li class="nav-item"><em class="fas fa-user-cog"></em> <a class="nav-links" href="#">
+        <li class="nav-item"><em class="fas fa-cog"></em> <a class="nav-links" href="#">
           Configurações 
-        </a></li>
-        <li class="nav-item"><em class="fas fa-user-circle"></em> <a class="nav-links" href="#">
-          Usuários
         </a></li>
       </ul>
       <a class="signout" href="index.html">
-        <em class="fas fa-sign-out-alt"></em></a>
+        <em class="fas fa-sign-out-alt"></em> Sair</a>
     </div>
+    <section class="reg">
+      <form>
+        <h2>Cadastro</h2>
+        <input type="text" class="nome" id="nome" placeholder="Nome Completo" required><br>
+        <input type="text" class="nome" id="nome" placeholder="Telefone"><br>
+        <input type="text" class="nome" id="nome" placeholder="CPF" required><br>
+        <input type="email" class="mail" id="mail" placeholder="E-mail"><br>
+        <input type="submit" value="a">
+      </form>
+    </section>
   </main>
 </body>
 </html>

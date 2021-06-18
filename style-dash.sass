@@ -23,6 +23,9 @@ $sidebg: #141414
 ul
   margin-top: 2rem
   list-style: none
+  display: flex
+  flex-direction: column
+  justify-content: space-around
 
 .nav-item
   padding: 1vh
@@ -34,10 +37,13 @@ ul
   padding: 1vh
   margin: 1vh
   transition: .2s ease
+  text-decoration: none
+  a
+    color: $txt-color
   &:hover
     opacity: .5
 
-.fa-user-cog, .fa-user-circle, .fa-home
+.fa-user-friends, .fa-cog, .fa-home
   color: $txt-color
   height: 5px
   width: 5px
@@ -50,11 +56,14 @@ ul
   justify-content: space-between
   float: left
   height: 100vh
-  width: 3vw
+  width: 15vw
   background: $sidebg
-  transition: .2s ease
-  &:hover
-    width: 15vw
+
+.active
+  background: $redlight
+  border-radius: 10px
+  span
+    color: $txt-color
 
 .nav-links
   color: $txt-color
@@ -63,3 +72,12 @@ ul
   text-decoration: none
   &:hover
     opacity: .5
+
+  /* registro
+
+section.reg
+  display: flex
+  justify-content: center
+  form
+    padding: 10px
+    background: #f2f2f2
