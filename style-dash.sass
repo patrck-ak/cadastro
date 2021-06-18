@@ -1,7 +1,3 @@
-$txt-color: #f2f2f2
-$redlight: #e63946
-$sidebg: #141414
-
 *
   margin: 0
   padding: 0
@@ -9,6 +5,11 @@ $sidebg: #141414
   box-sizing: border-box
   font-family: "Open Sans", sans-serif
   user-select: none
+
+$txt-color: #f2f2f2
+$lred: #b3565e
+$redlight: #e63946
+$sidebg: #141414
 
 /* font-family: 'Open Sans', sans-serif;
  font-family: 'Roboto', sans-serif
@@ -18,7 +19,6 @@ $sidebg: #141414
 
 
 /* barra vertical
-
 
 ul
   margin-top: 2rem
@@ -39,7 +39,9 @@ ul
 
 .fa-user-cog, .fa-user-circle, .fa-home
   color: $txt-color
-
+  height: 5px
+  width: 5px
+  margin-right: 2rem
 
 .left-bar
   overflow: hidden
@@ -53,8 +55,11 @@ ul
   transition: .2s ease
   &:hover
     width: 15vw
-  .nav-links
-    text-decoration: none
-    color: $txt-color
-    transition: .2s ease
 
+.nav-links
+  color: $txt-color
+  position: absolute
+  transition: .2s ease
+  text-decoration: none
+  &:hover
+    opacity: .5

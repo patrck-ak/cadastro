@@ -42,6 +42,9 @@ ul {
 
 .fa-user-cog, .fa-user-circle, .fa-home {
   color: #f2f2f2;
+  height: 5px;
+  width: 5px;
+  margin-right: 2rem;
 }
 
 .left-bar {
@@ -68,10 +71,15 @@ ul {
   width: 15vw;
 }
 
-.left-bar .nav-links {
-  text-decoration: none;
+.nav-links {
   color: #f2f2f2;
+  position: absolute;
   -webkit-transition: .2s ease;
   transition: .2s ease;
+  text-decoration: none;
+}
+
+.nav-links:hover {
+  opacity: .5;
 }
 /*# sourceMappingURL=style-dash.css.map */
