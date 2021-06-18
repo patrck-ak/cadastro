@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/*
+ font-family: 'Open Sans', sans-serif
+ font-family: 'Roboto', sans-serif
+ font-family: 'Roboto Condensed', sans-serif
+ font-family: 'Roboto Slab', serif
+ font-family: 'Ubuntu', sans-serif; */
+h2 {
+  text-align: center;
+  margin: 2vh;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background: #303030;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+form {
+  margin-top: 15%;
+}
+
+input[type="text"],
+input[type="password"] {
+  text-align: center;
+  width: 100%;
+  color: #383838;
+  border: none;
+  padding: 5px;
+  margin: 5px;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+input[type=text] {
+  background: url(assets/user.svg) no-repeat 10px 10px;
+  background-size: 10px;
+}
+
+input[type=text]:hover {
+  color: #f2f2f2;
+  background: #2e2e2e;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+input[type=password] {
+  background: url(assets/lock.svg) no-repeat 10px 10px;
+  background-size: 10px;
+}
+
+input[type=password]:hover {
+  color: #f2f2f2;
+  background: #2e2e2e;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+input[type=button] {
+  width: 100%;
+  margin: 5px;
+  padding: 5px;
+  border: none;
+  color: #f2f2f2;
+  margin-top: 2vh;
+  background: #ef233c;
+  border-radius: 10px;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+input[type=button]:hover {
+  background: #b91c2e;
+  -webkit-transform: translateY(-0.3vh);
+          transform: translateY(-0.3vh);
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+input[type=button]:active {
+  background: #b91c2e;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+}
+
+.box {
+  border-radius: 10px;
+  margin-top: 25vh;
+  width: 300px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #f2f2f2;
+}
+
+.shake {
+  -webkit-animation: shake 1s ease both;
+          animation: shake 1s ease both;
+}
+
+.load {
+  display: none;
+  -webkit-transition: opacity .5s ease;
+  transition: opacity .5s ease;
+  margin: 30px 80px;
+  position: absolute;
+}
+
+@-webkit-keyframes shake {
+  10% {
+    border: solid #d82035;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20% {
+    border: solid #d82035;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  40% {
+    border: solid #d82035;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  60% {
+    border: solid rgba(216, 32, 53, 0.5);
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 20px rgba(255, 0, 0, 0.1);
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.1);
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  80% {
+    border: solid rgba(216, 32, 53, 0.2);
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 20px rgba(255, 0, 0, 0.01);
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.01);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    border: solid rgba(216, 32, 53, 0);
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 20px rgba(255, 0, 0, 0);
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0);
+    border-radius: 10px;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+@keyframes shake {
+  10% {
+    border: solid #d82035;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20% {
+    border: solid #d82035;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  40% {
+    border: solid #d82035;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  60% {
+    border: solid rgba(216, 32, 53, 0.5);
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 20px rgba(255, 0, 0, 0.1);
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.1);
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  80% {
+    border: solid rgba(216, 32, 53, 0.2);
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 20px rgba(255, 0, 0, 0.01);
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.01);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    border: solid rgba(216, 32, 53, 0);
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 20px rgba(255, 0, 0, 0);
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0);
+    border-radius: 10px;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+/*# sourceMappingURL=style-index.css.map */
