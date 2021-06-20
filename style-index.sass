@@ -36,7 +36,7 @@ input[type="password"]
   margin: 5px
   transition: 0.2s ease
 
-input[type=text]
+input[type="text"]
   background: url(assets/user.svg) no-repeat 10px 10px
   background-size: 10px
   &:hover
@@ -45,6 +45,10 @@ input[type=text]
     border-radius: 10px
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5)
     transform: scale(1.1)
+  
+input[type="text"] + span
+  &:valid
+    content: "ok"
 
 input[type=password]
   background: url(assets/lock.svg) no-repeat 10px 10px

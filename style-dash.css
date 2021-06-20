@@ -111,11 +111,22 @@ section.reg {
 }
 
 section.reg form {
-  padding: 10px;
-  background: #f2f2f2;
+  color: #141414;
+  padding: 2vh;
+  background: #ebebeb;
+  border-radius: 10px;
 }
 
 section.reg form input {
+  text-align: center;
+}
+
+section.reg form input[type='submit'] {
+  width: 100%;
+}
+
+section.reg form h2 {
+  margin: 1vh;
   text-align: center;
 }
 /*# sourceMappingURL=style-dash.css.map */
