@@ -64,10 +64,6 @@ input[type="text"]:hover {
           transform: scale(1.1);
 }
 
-input[type="text"] + span:valid {
-  content: "ok";
-}
-
 input[type=password] {
   background: url(assets/lock.svg) no-repeat 10px 10px;
   background-size: 10px;
@@ -129,14 +125,6 @@ input[type=button]:active {
 .shake {
   -webkit-animation: shake 1s ease both;
           animation: shake 1s ease both;
-}
-
-.load {
-  display: none;
-  -webkit-transition: opacity .5s ease;
-  transition: opacity .5s ease;
-  margin: 30px 80px;
-  position: absolute;
 }
 
 @-webkit-keyframes shake {

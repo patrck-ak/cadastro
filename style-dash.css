@@ -54,11 +54,9 @@ ul {
   opacity: .5;
 }
 
-.fa-user-friends, .fa-cog, .fa-home {
+.bi-gear-fill, .bi-people-fill, .bi-speedometer {
+  margin-right: 5px;
   color: #f2f2f2;
-  height: 5px;
-  width: 5px;
-  margin-right: 2rem;
 }
 
 .left-bar {
@@ -105,27 +103,50 @@ section.reg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #141414;
 }
 
 section.reg form {
-  color: #141414;
-  padding: 2vh;
+  margin-top: 10vh;
+  text-align: center;
+  padding: 3vh;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
   background: #ebebeb;
-  border-radius: 10px;
 }
 
 section.reg form input {
   text-align: center;
+  margin: 5px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  width: 95%;
 }
 
 section.reg form input[type='submit'] {
-  width: 100%;
+  border: 1px #e63946 solid;
+  color: #141414;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+  width: 95%;
 }
 
-section.reg form h2 {
+section.reg form input[type='submit']:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  color: #f2f2f2;
+  background: #e63946;
+}
+
+section.reg form input[type='submit']:active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+section.reg form input h2 {
   margin: 1vh;
   text-align: center;
 }

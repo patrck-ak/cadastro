@@ -46,10 +46,6 @@ input[type="text"]
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5)
     transform: scale(1.1)
   
-input[type="text"] + span
-  &:valid
-    content: "ok"
-
 input[type=password]
   background: url(assets/lock.svg) no-repeat 10px 10px
   background-size: 10px
@@ -90,12 +86,6 @@ input[type=button]
 
 .shake
   animation: shake 1s ease both
-
-.load
-  display: none
-  transition: opacity .5s ease
-  margin: 30px 80px
-  position: absolute
 
 @keyframes shake
   10%
