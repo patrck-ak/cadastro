@@ -11,7 +11,8 @@ $lred: #b3565e
 $lbg: #ebebeb
 $redlight: #e63946
 $sidebg: #141414
-$input: #bbbbbb
+$bg-input: #e4e4e4
+$hover-input: #b8b8b8
 
 /* 
  font-family: 'Open Sans', sans-serif
@@ -35,12 +36,14 @@ form
   h2 
     font-size: 1.5em
     font-weight: bolder
-  label
-    font-family: 'Open Sans', sans-serif
+    text-align: center
+    margin: 2vh
+    font-family: "Open Sans", sans-serif
 
   input
-    background: #d3d3d3
-    &[type='text'], &[type='password']
+    /* usuario input
+    &[type='text']
+      background: $bg-input url(assets/person-fill.svg) no-repeat 10px center
       border: none
       margin: 1vh
       padding: 1vh
@@ -48,23 +51,36 @@ form
       border-radius: 10px
       transition: .2s ease
       &:hover
-        background: #141414
+        background-color: $hover-input
+
+    /* senha input
+    &[type='password']
+      background: $bg-input url(assets/key-fill.svg) no-repeat 10px center
+      border: none
+      margin: 1vh
+      padding: 1vh
+      text-align: center
+      border-radius: 10px
+      transition: .2s ease
+      &:hover
+        background-color: $hover-input
+
+    /* botão submit
     &[type='button']
       margin-top: 5vh
       width: 100%
       padding: .5vh
-      background: none
+      background: url(assets/lock-fill.svg) no-repeat 10px center
       border-radius: 10px
       border: 3px $redlight solid 
       transition: .2s ease
       &:hover
-        background: $redlight
+        background: $redlight url(assets/unlock-fill.svg) no-repeat 10px center
         transform: scale(1.05)
         color: $txt-color
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.5)
       &:active
         transform: scale(1)
-
 
 .box
   border-radius: 10px
@@ -74,3 +90,41 @@ form
   display: flex
   justify-content: center
   background: $txt-color
+
+.shake
+  animation: shake 1s linear both
+
+@keyframes shake
+  0%
+    transform: translateX(-1vh)
+    border: $redlight solid 2px
+  10%
+    transform: translateX(2vh)
+    border: $redlight solid 2px
+  20%
+    transform: translateX(-1vh)
+    border: $redlight solid 2px
+  30%
+    transform: translateX(2vh)
+    border: $redlight solid 2px
+  40%
+    transform: translateX(-1vh)
+    border: $redlight solid 2px
+  50%
+    transform: translateX(2vh)
+    border: $redlight solid 2px
+  60%
+    transform: translateX(-1vh)
+    border: $redlight solid 2px
+  70%
+    transform: translateX(2vh)
+    border: $redlight solid 2px
+  80%
+    transform: translateX(-1vh)
+    border: $redlight solid 2px
+  90%
+    transform: translateX(2vh)
+    border: $redlight solid 2px
+  100%
+    transform: translateX(0)
+    border: $redlight solid 2px

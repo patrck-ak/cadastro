@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -40,17 +41,19 @@ form {
 form h2 {
   font-size: 1.5em;
   font-weight: bolder;
-}
-
-form label {
-  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  margin: 2vh;
+  font-family: "Open Sans", sans-serif;
 }
 
 form input {
-  background: #d3d3d3;
+  /* usuario input */
+  /* senha input */
+  /* botão submit */
 }
 
-form input[type='text'], form input[type='password'] {
+form input[type='text'] {
+  background: #e4e4e4 url(assets/person-fill.svg) no-repeat 10px center;
   border: none;
   margin: 1vh;
   padding: 1vh;
@@ -60,15 +63,30 @@ form input[type='text'], form input[type='password'] {
   transition: .2s ease;
 }
 
-form input[type='text']:hover, form input[type='password']:hover {
-  background: #141414;
+form input[type='text']:hover {
+  background-color: #b8b8b8;
+}
+
+form input[type='password'] {
+  background: #e4e4e4 url(assets/key-fill.svg) no-repeat 10px center;
+  border: none;
+  margin: 1vh;
+  padding: 1vh;
+  text-align: center;
+  border-radius: 10px;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+form input[type='password']:hover {
+  background-color: #b8b8b8;
 }
 
 form input[type='button'] {
   margin-top: 5vh;
   width: 100%;
   padding: .5vh;
-  background: none;
+  background: url(assets/lock-fill.svg) no-repeat 10px center;
   border-radius: 10px;
   border: 3px #e63946 solid;
   -webkit-transition: .2s ease;
@@ -76,7 +94,7 @@ form input[type='button'] {
 }
 
 form input[type='button']:hover {
-  background: #e63946;
+  background: #e63946 url(assets/unlock-fill.svg) no-repeat 10px center;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
   color: #f2f2f2;
@@ -101,5 +119,126 @@ form input[type='button']:active {
       -ms-flex-pack: center;
           justify-content: center;
   background: #f2f2f2;
+}
+
+.shake {
+  -webkit-animation: shake 1s linear both;
+          animation: shake 1s linear both;
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translateX(-1vh);
+            transform: translateX(-1vh);
+    border: #e63946 solid 2px;
+  }
+  10% {
+    -webkit-transform: translateX(2vh);
+            transform: translateX(2vh);
+    border: #e63946 solid 2px;
+  }
+  20% {
+    -webkit-transform: translateX(-1vh);
+            transform: translateX(-1vh);
+    border: #e63946 solid 2px;
+  }
+  30% {
+    -webkit-transform: translateX(2vh);
+            transform: translateX(2vh);
+    border: #e63946 solid 2px;
+  }
+  40% {
+    -webkit-transform: translateX(-1vh);
+            transform: translateX(-1vh);
+    border: #e63946 solid 2px;
+  }
+  50% {
+    -webkit-transform: translateX(2vh);
+            transform: translateX(2vh);
+    border: #e63946 solid 2px;
+  }
+  60% {
+    -webkit-transform: translateX(-1vh);
+            transform: translateX(-1vh);
+    border: #e63946 solid 2px;
+  }
+  70% {
+    -webkit-transform: translateX(2vh);
+            transform: translateX(2vh);
+    border: #e63946 solid 2px;
+  }
+  80% {
+    -webkit-transform: translateX(-1vh);
+            transform: translateX(-1vh);
+    border: #e63946 solid 2px;
+  }
+  90% {
+    -webkit-transform: translateX(2vh);
+            transform: translateX(2vh);
+    border: #e63946 solid 2px;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    border: #e63946 solid 2px;
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: translateX(-1vh);
+            transform: translateX(-1vh);
+    border: #e63946 solid 2px;
+  }
+  10% {
+    -webkit-transform: translateX(2vh);
+            transform: translateX(2vh);
+    border: #e63946 solid 2px;
+  }
+  20% {
+    -webkit-transform: translateX(-1vh);
+            transform: translateX(-1vh);
+    border: #e63946 solid 2px;
+  }
+  30% {
+    -webkit-transform: translateX(2vh);
+            transform: translateX(2vh);
+    border: #e63946 solid 2px;
+  }
+  40% {
+    -webkit-transform: translateX(-1vh);
+            transform: translateX(-1vh);
+    border: #e63946 solid 2px;
+  }
+  50% {
+    -webkit-transform: translateX(2vh);
+            transform: translateX(2vh);
+    border: #e63946 solid 2px;
+  }
+  60% {
+    -webkit-transform: translateX(-1vh);
+            transform: translateX(-1vh);
+    border: #e63946 solid 2px;
+  }
+  70% {
+    -webkit-transform: translateX(2vh);
+            transform: translateX(2vh);
+    border: #e63946 solid 2px;
+  }
+  80% {
+    -webkit-transform: translateX(-1vh);
+            transform: translateX(-1vh);
+    border: #e63946 solid 2px;
+  }
+  90% {
+    -webkit-transform: translateX(2vh);
+            transform: translateX(2vh);
+    border: #e63946 solid 2px;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    border: #e63946 solid 2px;
+  }
 }
 /*# sourceMappingURL=style-index.css.map */

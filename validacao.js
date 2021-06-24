@@ -1,12 +1,3 @@
-function sleep(milliseconds) {
-  var start = new Date().getTime();
-  for (var i = 0; i < 1e7; i++) {
-    if (new Date().getTime() - start > milliseconds) {
-      break;
-    }
-  }
-}
-
 addEventListener('keyup', function(event) {
   if (event.code === 'Enter') {auth()}
 })
@@ -25,6 +16,6 @@ function auth() {
     x.value = null
     setTimeout(() => {
       document.getElementById("passwd").classList.remove("shake");
-    }, 2500);
+    }, 1000);
   }
 }
