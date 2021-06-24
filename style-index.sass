@@ -6,12 +6,19 @@
   font-family: "Open Sans", sans-serif
   user-select: none
 
+$txt-color: #f2f2f2
+$lred: #b3565e
+$lbg: #ebebeb
+$redlight: #e63946
+$sidebg: #141414
+$input: #bbbbbb
+
 /* 
  font-family: 'Open Sans', sans-serif
  font-family: 'Roboto', sans-serif
  font-family: 'Roboto Condensed', sans-serif
  font-family: 'Roboto Slab', serif
- font-family: 'Ubuntu', sans-serif; */
+ font-family: 'Ubuntu', sans-serif;
 
 h2
   text-align: center
@@ -19,61 +26,45 @@ h2
   font-family: "Open Sans", sans-serif
 
 body
-  background: #303030
+  background: $sidebg
   display: flex
   justify-content: center
 
 form
   margin-top: 15%
+  h2 
+    font-size: 1.5em
+    font-weight: bolder
+  label
+    font-family: 'Open Sans', sans-serif
 
-input[type="text"],
-input[type="password"]
-  text-align: center
-  width: 100%
-  color: #383838
-  border: none
-  padding: 5px
-  margin: 5px
-  transition: 0.2s ease
+  input
+    background: #d3d3d3
+    &[type='text'], &[type='password']
+      border: none
+      margin: 1vh
+      padding: 1vh
+      text-align: center
+      border-radius: 10px
+      transition: .2s ease
+      &:hover
+        background: #141414
+    &[type='button']
+      margin-top: 5vh
+      width: 100%
+      padding: .5vh
+      background: none
+      border-radius: 10px
+      border: 3px $redlight solid 
+      transition: .2s ease
+      &:hover
+        background: $redlight
+        transform: scale(1.05)
+        color: $txt-color
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5)
+      &:active
+        transform: scale(1)
 
-input[type="text"]
-  background: url(assets/user.svg) no-repeat 10px 10px
-  background-size: 10px
-  &:hover
-    color: #f2f2f2
-    background: #2e2e2e
-    border-radius: 10px
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5)
-    transform: scale(1.1)
-  
-input[type=password]
-  background: url(assets/lock.svg) no-repeat 10px 10px
-  background-size: 10px
-  &:hover
-    color: #f2f2f2
-    background: #2e2e2e
-    border-radius: 10px
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5)
-    transform: scale(1.1)
-
-input[type=button]
-  width: 100%
-  margin: 5px
-  padding: 5px
-  border: none
-  color: #f2f2f2
-  margin-top: 2vh
-  background: #ef233c
-  border-radius: 10px
-  transition: .2s ease
-  &:hover
-    background: #b91c2e
-    transform: translateY(-.3vh)
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5)
-  &:active
-    background: #b91c2e
-    transform: translateY(0)
-    box-shadow: 0 0 0 rgba(0, 0, 0, 0.5)
 
 .box
   border-radius: 10px
@@ -82,46 +73,4 @@ input[type=button]
   height: 300px
   display: flex
   justify-content: center
-  background: #f2f2f2
-
-.shake
-  animation: shake 1s ease both
-
-@keyframes shake
-  10%
-    border: solid #d82035
-    border-radius: 10px
-    box-shadow: 0 0 20px rgba(255, 0, 0, 0.2)
-    transform: translateX(-10px)
-
-  20%
-    border: solid #d82035
-    border-radius: 10px
-    box-shadow: 0 0 20px rgba(255, 0, 0, 0.2)
-    transform: translateX(10px)
-
-  40%
-    border: solid #d82035
-    border-radius: 10px
-    box-shadow: 0 0 20px rgba(255, 0, 0, 0.2)
-    transform: translateX(-10px)
-
-  60%
-    border: solid rgba(216, 32, 53, 0.5)
-    border-radius: 10px
-    box-shadow: 0 0 20px rgba(255, 0, 0, 0.1)
-    transform: translateX(10px)
-
-  80%
-    border: solid rgba(216, 32, 53, 0.2)
-    border-radius: 10px
-    box-shadow: 0 0 20px rgba(255, 0, 0, 0.01)
-    transform: translateX(0)
-
-  100%
-    border: solid rgba(216, 32, 53, 0)
-    border-radius: 10px
-    box-shadow: 0 0 20px rgba(255, 0, 0, 0.0)
-    border-radius: 10px
-    transform: translateX(0)
-    box-shadow: none
+  background: $txt-color

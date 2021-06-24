@@ -126,8 +126,18 @@ section.reg form input {
   width: 95%;
 }
 
+section.reg form input[type='text'], section.reg form input[type='email'] {
+  background: #fdfdfd;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+section.reg form input[type='text']:hover, section.reg form input[type='email']:hover {
+  background: #dddddd;
+}
+
 section.reg form input[type='submit'] {
-  border: 1px #e63946 solid;
+  border: 3px #e63946 solid;
   color: #141414;
   -webkit-transition: .2s ease;
   transition: .2s ease;

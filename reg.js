@@ -1,1 +1,5 @@
-document.querySelector('form').addEventListener('blur');
+document.querySelector('form').addEventListener('submit', auth);
+
+function auth() {
+  //
+}

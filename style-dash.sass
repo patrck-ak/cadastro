@@ -77,12 +77,14 @@ section.reg
   display: flex
   justify-content: space-around
   color: $sidebg
+
   form
     margin-top: 10vh
     text-align: center
     padding: 3vh
     transition: .5s ease
     background: $lbg
+
     input
       text-align: center
       margin: 5px
@@ -90,9 +92,14 @@ section.reg
       border: none
       border-radius: 5px
       width: 95%
-      &[type='text'], [type='email']
+      &[type='text'], &[type='email']
+        background: #fdfdfd
+        transition: .2s ease
+        &:hover
+          background: #dddddd
+
       &[type='submit']
-        border: 1px $redlight solid
+        border: 3px $redlight solid
         color: $sidebg
         transition: .2s ease
         width: 95%
@@ -102,6 +109,7 @@ section.reg
           background: $redlight
         &:active
          transform: scale(1)   
+         
       h2
         margin: 1vh
         text-align: center
