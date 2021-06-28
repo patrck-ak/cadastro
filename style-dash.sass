@@ -10,7 +10,11 @@ $txt-color: #f2f2f2
 $lred: #b3565e
 $lbg: #ebebeb
 $redlight: #e63946
-$sidebg: #141414
+$gray: #141414
+$bg-input: #e4e4e4
+$hover-input: #b8b8b8
+$gray-light: #1f1f1f
+$green-light: #399e5a
 
 /* font-family: 'Open Sans', sans-serif;
  font-family: 'Roboto', sans-serif
@@ -28,7 +32,7 @@ ul
   justify-content: space-around
 
 .nav-item
-  padding: 1vh
+  padding: 1.5vh
   margin: 1vh
 
 .signout
@@ -38,30 +42,32 @@ ul
   margin: 1vh
   transition: .2s ease
   text-decoration: none
-  a
-    color: $txt-color
   &:hover
     opacity: .5
 
-.bi-gear-fill, .bi-people-fill, .bi-speedometer
+.bi-gear-fill, .bi-people-fill, .bi-speedometer, .bi-info-lg, .bi-archive-fill
   margin-right: 5px
   color: $txt-color
 
 .left-bar
-  overflow: hidden
   display: flex
   flex-direction: column
   justify-content: space-between
   float: left
   height: 100vh
   width: 15vw
-  background: $sidebg
+  background: $gray
 
 .active
   background: $redlight
   border-radius: 10px
   span
     color: $txt-color
+
+.space
+  margin-top: 3vh
+  height: 2vh
+  background: $gray-light
 
 .nav-links
   color: $txt-color
@@ -76,41 +82,99 @@ ul
 section.reg
   display: flex
   justify-content: space-around
-  color: $sidebg
-
+  color: $gray
   form
-    margin-top: 10vh
-    text-align: center
+    height: 100vh
+    width: 100%
+    display: flex
+    flex-direction: column
     padding: 3vh
     transition: .5s ease
-    background: $lbg
-
+    background: none
+    h3
+      margin-bottom: 2vh
+      margin-left: 1.1vh
     input
-      text-align: center
-      margin: 5px
-      padding: 5px
-      border: none
-      border-radius: 5px
-      width: 95%
-      &[type='text'], &[type='email']
-        background: #fdfdfd
-        transition: .2s ease
-        &:hover
-          background: #dddddd
+      float: left
+      border-radius: 1vh
+      width: 50px
+      margin: 1vh
+      padding: 1vh
+      border: hidden
+      background: $bg-input
+      transition: background .2s ease
+      &:hover
+        background: $hover-input
+      &[id='nam']
+        width: 30vw
+        &:valid
+          border: solid 1px $green-light
+          background-image: url(assets/check.svg)
+          background-repeat: no-repeat 
+          background-position: 95% center
+      &[id='mail']
+        width: 30vw
+        &:valid
+          border: solid 1px $green-light
+          background-image: url(assets/check.svg)
+          background-repeat: no-repeat 
+          background-position: 95% center
+      &[id='end']
+        width: 25vw
+        &:valid
+          border: solid 1px $green-light
+          background-image: url(assets/check.svg)
+          background-repeat: no-repeat 
+          background-position: 95% center
+      &[id='nm']
+        width: 4vw
+        &:valid
+          border: solid 1px $green-light
+          background-image: url(assets/check.svg)
+          background-repeat: no-repeat 
+          background-position: 95% center
+      &[id='tel']
+        width: 14.6vw
+        &:valid
+          border: solid 1px $green-light
+          background-image: url(assets/check.svg)
+          background-repeat: no-repeat 
+          background-position: 95% center
+      &[id='cpf']
+        width: 14.5vw
+        &:valid
+          border: solid 1px $green-light
+          background-image: url(assets/check.svg)
+          background-repeat: no-repeat 
+          background-position: 95% center
 
-      &[type='submit']
-        border: 3px $redlight solid
-        color: $sidebg
-        transition: .2s ease
-        width: 95%
-        &:hover
-          transform: scale(1.05)
-          color: $txt-color
-          background: $redlight
-        &:active
-         transform: scale(1)   
-         
-      h2
-        margin: 1vh
-        text-align: center
+  span.botoes
+    margin-top: 5vh
+    float: right
+    input[type='submit']
+      width: 7vw
+      border: 3px $gray-light solid
+      background: none
+      color: $gray
+      transition: .2s ease
+      &:hover
+        transform: scale(1.05)
+        color: $txt-color
+        background: $green-light
+        border: 3px $green-light solid
+      &:active
+        transform: scale(1)
+    input[type='reset']
+      background: none
+      width: 7vw
+      border: 3px $redlight solid
+      color: $gray
+      transition: .2s ease
+      &:hover
+        transform: scale(1.05)
+        color: $txt-color
+        background: $redlight
+      &:active
+        transform: scale(1)
+
   

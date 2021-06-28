@@ -32,7 +32,7 @@ ul {
 }
 
 .nav-item {
-  padding: 1vh;
+  padding: 1.5vh;
   margin: 1vh;
 }
 
@@ -46,21 +46,16 @@ ul {
   text-decoration: none;
 }
 
-.signout a {
-  color: #f2f2f2;
-}
-
 .signout:hover {
   opacity: .5;
 }
 
-.bi-gear-fill, .bi-people-fill, .bi-speedometer {
+.bi-gear-fill, .bi-people-fill, .bi-speedometer, .bi-info-lg, .bi-archive-fill {
   margin-right: 5px;
   color: #f2f2f2;
 }
 
 .left-bar {
-  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -86,6 +81,12 @@ ul {
   color: #f2f2f2;
 }
 
+.space {
+  margin-top: 3vh;
+  height: 2vh;
+  background: #1f1f1f;
+}
+
 .nav-links {
   color: #f2f2f2;
   position: absolute;
@@ -109,55 +110,153 @@ section.reg {
 }
 
 section.reg form {
-  margin-top: 10vh;
-  text-align: center;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 3vh;
   -webkit-transition: .5s ease;
   transition: .5s ease;
-  background: #ebebeb;
+  background: none;
+}
+
+section.reg form h3 {
+  margin-bottom: 2vh;
+  margin-left: 1.1vh;
 }
 
 section.reg form input {
-  text-align: center;
-  margin: 5px;
-  padding: 5px;
-  border: none;
-  border-radius: 5px;
-  width: 95%;
+  float: left;
+  border-radius: 1vh;
+  width: 50px;
+  margin: 1vh;
+  padding: 1vh;
+  border: hidden;
+  background: #e4e4e4;
+  -webkit-transition: background .2s ease;
+  transition: background .2s ease;
 }
 
-section.reg form input[type='text'], section.reg form input[type='email'] {
-  background: #fdfdfd;
+section.reg form input:hover {
+  background: #b8b8b8;
+}
+
+section.reg form input[id='nam'] {
+  width: 30vw;
+}
+
+section.reg form input[id='nam']:valid {
+  border: solid 1px #399e5a;
+  background-image: url(assets/check.svg);
+  background-repeat: no-repeat;
+  background-position: 95% center;
+}
+
+section.reg form input[id='mail'] {
+  width: 30vw;
+}
+
+section.reg form input[id='mail']:valid {
+  border: solid 1px #399e5a;
+  background-image: url(assets/check.svg);
+  background-repeat: no-repeat;
+  background-position: 95% center;
+}
+
+section.reg form input[id='end'] {
+  width: 25vw;
+}
+
+section.reg form input[id='end']:valid {
+  border: solid 1px #399e5a;
+  background-image: url(assets/check.svg);
+  background-repeat: no-repeat;
+  background-position: 95% center;
+}
+
+section.reg form input[id='nm'] {
+  width: 4vw;
+}
+
+section.reg form input[id='nm']:valid {
+  border: solid 1px #399e5a;
+  background-image: url(assets/check.svg);
+  background-repeat: no-repeat;
+  background-position: 95% center;
+}
+
+section.reg form input[id='tel'] {
+  width: 14.6vw;
+}
+
+section.reg form input[id='tel']:valid {
+  border: solid 1px #399e5a;
+  background-image: url(assets/check.svg);
+  background-repeat: no-repeat;
+  background-position: 95% center;
+}
+
+section.reg form input[id='cpf'] {
+  width: 14.5vw;
+}
+
+section.reg form input[id='cpf']:valid {
+  border: solid 1px #399e5a;
+  background-image: url(assets/check.svg);
+  background-repeat: no-repeat;
+  background-position: 95% center;
+}
+
+section.reg span.botoes {
+  margin-top: 5vh;
+  float: right;
+}
+
+section.reg span.botoes input[type='submit'] {
+  width: 7vw;
+  border: 3px #1f1f1f solid;
+  background: none;
+  color: #141414;
   -webkit-transition: .2s ease;
   transition: .2s ease;
 }
 
-section.reg form input[type='text']:hover, section.reg form input[type='email']:hover {
-  background: #dddddd;
+section.reg span.botoes input[type='submit']:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  color: #f2f2f2;
+  background: #399e5a;
+  border: 3px #399e5a solid;
 }
 
-section.reg form input[type='submit'] {
+section.reg span.botoes input[type='submit']:active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+section.reg span.botoes input[type='reset'] {
+  background: none;
+  width: 7vw;
   border: 3px #e63946 solid;
   color: #141414;
   -webkit-transition: .2s ease;
   transition: .2s ease;
-  width: 95%;
 }
 
-section.reg form input[type='submit']:hover {
+section.reg span.botoes input[type='reset']:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
   color: #f2f2f2;
   background: #e63946;
 }
 
-section.reg form input[type='submit']:active {
+section.reg span.botoes input[type='reset']:active {
   -webkit-transform: scale(1);
           transform: scale(1);
-}
-
-section.reg form input h2 {
-  margin: 1vh;
-  text-align: center;
 }
 /*# sourceMappingURL=style-dash.css.map */

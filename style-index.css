@@ -54,7 +54,7 @@ form input {
 
 form input[type='text'] {
   background: #e4e4e4 url(assets/person-fill.svg) no-repeat 10px center;
-  border: none;
+  border: 0;
   margin: 1vh;
   padding: 1vh;
   text-align: center;
@@ -69,7 +69,7 @@ form input[type='text']:hover {
 
 form input[type='password'] {
   background: #e4e4e4 url(assets/key-fill.svg) no-repeat 10px center;
-  border: none;
+  border: 0;
   margin: 1vh;
   padding: 1vh;
   text-align: center;
