@@ -16,7 +16,7 @@
  font-family: 'Roboto Condensed', sans-serif
  font-family: 'Roboto Slab', serif
  font-family: 'Ubuntu', sans-serif */
-/* barra vertical */
+/* SIDEBAR */
 ul {
   margin-top: 2rem;
   list-style: none;
@@ -34,20 +34,6 @@ ul {
 .nav-item {
   padding: 1.5vh;
   margin: 1vh;
-}
-
-.signout {
-  border-radius: 5px;
-  color: #e63946;
-  padding: 1vh;
-  margin: 1vh;
-  -webkit-transition: .2s ease;
-  transition: .2s ease;
-  text-decoration: none;
-}
-
-.signout:hover {
-  opacity: .5;
 }
 
 .bi-gear-fill, .bi-people-fill, .bi-speedometer, .bi-info-lg, .bi-archive-fill {
@@ -70,6 +56,8 @@ ul {
   height: 100vh;
   width: 15vw;
   background: #141414;
+  -webkit-box-shadow: 5px 0 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .active {
@@ -93,25 +81,34 @@ ul {
   -webkit-transition: .2s ease;
   transition: .2s ease;
   text-decoration: none;
-  /* registro */
 }
 
 .nav-links:hover {
   opacity: .5;
 }
 
+.signout {
+  border-radius: 5px;
+  color: #e63946;
+  padding: 1vh;
+  margin: 1vh;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+  text-decoration: none;
+  /* REGISTRO */
+}
+
+.signout:hover {
+  opacity: .5;
+}
+
 section.reg {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   color: #141414;
 }
 
 section.reg form {
   height: 100vh;
-  width: 100%;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

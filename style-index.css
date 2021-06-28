@@ -173,8 +173,8 @@ form input[type='button']:active {
     border: #e63946 solid 2px;
   }
   90% {
-    -webkit-transform: translateX(2vh);
-            transform: translateX(2vh);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
     border: #e63946 solid 2px;
   }
   100% {
@@ -231,8 +231,8 @@ form input[type='button']:active {
     border: #e63946 solid 2px;
   }
   90% {
-    -webkit-transform: translateX(2vh);
-            transform: translateX(2vh);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
     border: #e63946 solid 2px;
   }
   100% {
