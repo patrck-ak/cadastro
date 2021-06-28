@@ -36,11 +36,16 @@
           <h3>Registrar novo paciente</h3>
           <input type="text"id="nam" placeholder="Nome Completo" minlength="10" required>
           <input type="email" id="mail" placeholder="E-Mail" required>
-          <span><input type="end" id="end" placeholder="Endereço" required>
+          <input type="bairro" id="bairro" placeholder="Bairro / Distrito" required>
+          <span>
+            <input type="end" id="end" placeholder="Endereço" minlength="10" required>
             <input type="nm" id="nm" placeholder="N°" required></span>
           <span>
-            <input type="text" id="cpf" placeholder="CPF" required>
-            <input type="text" id="tel" placeholder="Telefone" required></span>
+            <input type="text" id="cpf" placeholder="CPF" minlength="14" required>
+            <input type="text" id="tel" placeholder="Telefone" minlength="15" required></span>
+          <span> 
+            <input type="text" id="date" placeholder="Nascimento" minlength="8" required>
+            <input type="text" id="sus" placeholder="Cartão SUS" minlength="15" required></span>
           <span class="botoes">
             <input type="submit" value="Registrar">
             <input type="reset" value="Limpar"></span>

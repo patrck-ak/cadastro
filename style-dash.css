@@ -147,62 +147,39 @@ section.reg form input[id='nam'] {
   width: 30vw;
 }
 
-section.reg form input[id='nam']:valid {
-  border: solid 1px #399e5a;
-  background-image: url(assets/check.svg);
-  background-repeat: no-repeat;
-  background-position: 95% center;
-}
-
 section.reg form input[id='mail'] {
   width: 30vw;
-}
-
-section.reg form input[id='mail']:valid {
-  border: solid 1px #399e5a;
-  background-image: url(assets/check.svg);
-  background-repeat: no-repeat;
-  background-position: 95% center;
 }
 
 section.reg form input[id='end'] {
   width: 25vw;
 }
 
-section.reg form input[id='end']:valid {
-  border: solid 1px #399e5a;
-  background-image: url(assets/check.svg);
-  background-repeat: no-repeat;
-  background-position: 95% center;
-}
-
 section.reg form input[id='nm'] {
   width: 4vw;
-}
-
-section.reg form input[id='nm']:valid {
-  border: solid 1px #399e5a;
-  background-image: url(assets/check.svg);
-  background-repeat: no-repeat;
-  background-position: 95% center;
 }
 
 section.reg form input[id='tel'] {
   width: 14.6vw;
 }
 
-section.reg form input[id='tel']:valid {
-  border: solid 1px #399e5a;
-  background-image: url(assets/check.svg);
-  background-repeat: no-repeat;
-  background-position: 95% center;
-}
-
 section.reg form input[id='cpf'] {
   width: 14.5vw;
 }
 
-section.reg form input[id='cpf']:valid {
+section.reg form input[id='date'] {
+  width: 9vw;
+}
+
+section.reg form input[id='sus'] {
+  width: 20vw;
+}
+
+section.reg form input[id='bairro'] {
+  width: 30vw;
+}
+
+section.reg form input:valid {
   border: solid 1px #399e5a;
   background-image: url(assets/check.svg);
   background-repeat: no-repeat;
