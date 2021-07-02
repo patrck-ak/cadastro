@@ -8,10 +8,8 @@
 
 $txt-color: #f2f2f2
 $redlight: #e63946
-$gray: #141414
-$bg-input: #e4e4e4
-$hover-input: #b8b8b8
-$gray-light: #1f1f1f
+$gray: #141414; $gray-light: #1f1f1f
+$bg-input: #e4e4e4; $hover-input: #b8b8b8
 $green-light: #399e5a
 
 /* font-family: 'Open Sans', sans-serif;
@@ -23,18 +21,13 @@ $green-light: #399e5a
 
 /* SIDEBAR
 
-ul
-  margin-top: 2rem
-  list-style: none
-  display: flex
-  flex-direction: column
-  justify-content: space-around
 
-.nav-item
-  padding: 1.5vh
-  margin: 1vh
 
-.bi-gear-fill, .bi-people-fill, .bi-speedometer, .bi-info-lg, .bi-archive-fill
+.bi-gear-fill, 
+.bi-people-fill, 
+.bi-speedometer, 
+.bi-info-lg, 
+.bi-archive-fill
   margin-right: 5px
   color: $txt-color
 
@@ -47,6 +40,31 @@ ul
   width: 15vw
   background: $gray
   box-shadow: 5px 0 20px rgba(0, 0, 0, 0.5)
+  ul
+    margin-top: 2rem
+    list-style: none
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    .nav-item
+      padding: 1.5vh
+      margin: 1vh
+    .nav-links
+      color: $txt-color
+      position: absolute
+      transition: .2s ease
+      text-decoration: none
+      &:hover
+        opacity: .5
+  .signout
+    border-radius: 5px
+    color: $redlight
+    padding: 1vh
+    margin: 1vh
+    transition: .2s ease
+    text-decoration: none
+    &:hover
+      opacity: .5
 
 .active
   background: $redlight
@@ -55,38 +73,21 @@ ul
     color: $txt-color
 
 .space
-  margin-top: 3vh
-  height: 2vh
+  margin-top: 2.5vh
+  height: 1.5vh
   background: $gray-light
 
-.nav-links
-  color: $txt-color
-  position: absolute
-  transition: .2s ease
-  text-decoration: none
-  &:hover
-    opacity: .5
-
-.signout
-  border-radius: 5px
-  color: $redlight
-  padding: 1vh
-  margin: 1vh
-  transition: .2s ease
-  text-decoration: none
-  &:hover
-    opacity: .5
 
   /* REGISTRO
 
 section.reg
   color: $gray
   form
+    width: 45%
+    padding: 3vh
     height: 100vh
-    width: 50%
     display: flex
     flex-direction: column
-    padding: 3vh
     transition: .5s ease
     background: none
     h3
@@ -94,7 +95,7 @@ section.reg
       margin-left: 1.1vh
     input
       float: left
-      border-radius: 1vh
+      border-radius: 1.5vh
       width: 50px
       margin: 1vh
       padding: 1vh
@@ -146,12 +147,13 @@ section.reg
     input[type='reset']
       background: none
       width: 7vw
-      border: 3px $redlight solid
+      border: 3px $gray solid
       color: $gray
       transition: .2s ease
       &:hover
         transform: scale(1.05)
         color: $txt-color
         background: $redlight
+        border: 3px $redlight solid
       &:active
         transform: scale(1)
