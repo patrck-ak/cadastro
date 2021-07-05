@@ -21,8 +21,6 @@ $green-light: #399e5a
 
 /* SIDEBAR
 
-
-
 .bi-gear-fill, 
 .bi-people-fill, 
 .bi-speedometer, 
@@ -41,21 +39,22 @@ $green-light: #399e5a
   background: $gray
   box-shadow: 5px 0 20px rgba(0, 0, 0, 0.5)
   ul
-    margin-top: 2rem
+    margin-top: 2.5rem
     list-style: none
     display: flex
     flex-direction: column
-    justify-content: space-around
+    justify-content: space-evenly
     .nav-item
       padding: 1.5vh
       margin: 1vh
-    .nav-links
-      color: $txt-color
-      position: absolute
-      transition: .2s ease
-      text-decoration: none
-      &:hover
-        opacity: .5
+      overflow: hidden
+      a
+        text-decoration: none
+        color: $txt-color
+        font-family: 'Roboto', serif
+      em
+        font-size: 100%
+        
   .signout
     border-radius: 5px
     color: $redlight
@@ -68,7 +67,7 @@ $green-light: #399e5a
 
 .active
   background: $redlight
-  border-radius: 10px
+  border-radius: 1em
   span
     color: $txt-color
 

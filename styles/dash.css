@@ -46,7 +46,7 @@
 }
 
 .left-bar ul {
-  margin-top: 2rem;
+  margin-top: 2.5rem;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -55,25 +55,25 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .left-bar ul .nav-item {
   padding: 1.5vh;
   margin: 1vh;
+  overflow: hidden;
 }
 
-.left-bar ul .nav-links {
-  color: #f2f2f2;
-  position: absolute;
-  -webkit-transition: .2s ease;
-  transition: .2s ease;
+.left-bar ul .nav-item a {
   text-decoration: none;
+  color: #f2f2f2;
+  font-family: 'Roboto', serif;
 }
 
-.left-bar ul .nav-links:hover {
-  opacity: .5;
+.left-bar ul .nav-item em {
+  font-size: 100%;
 }
 
 .left-bar .signout {
@@ -92,7 +92,7 @@
 
 .active {
   background: #e63946;
-  border-radius: 10px;
+  border-radius: 1em;
 }
 
 .active span {
