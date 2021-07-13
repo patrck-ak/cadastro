@@ -5,11 +5,8 @@ addEventListener('keyup', function(event) {
 function auth() {
   var u = document.getElementById("usr").value;
   var p = document.getElementById("passwd").value;
-  if (u == "a" && p == "a") {
-    window.location = 'dashboard.html';
-  } else {
-    console.error('Senha inválida ou null')
-    console.error('Senha inválida ou null')
+  if (u == "a" && p == "a") {window.location = 'dashboard.html';} 
+    else {
     console.error('Senha inválida ou null')
     var x = document.getElementById("passwd")
     x.classList.add("shake");

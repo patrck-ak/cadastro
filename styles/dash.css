@@ -4,7 +4,7 @@
   outline: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -18,10 +18,9 @@
  font-family: 'Ubuntu', sans-serif */
 /* SIDEBAR */
 .bi-gear-fill,
-.bi-people-fill,
 .bi-speedometer,
-.bi-info-lg,
-.bi-archive-fill {
+.bi-person-circle,
+.bi-people-fill {
   margin-right: 5px;
   color: #f2f2f2;
 }
@@ -43,6 +42,7 @@
   background: #141414;
   -webkit-box-shadow: 5px 0 20px rgba(0, 0, 0, 0.5);
           box-shadow: 5px 0 20px rgba(0, 0, 0, 0.5);
+  /* REGISTRO */
 }
 
 .left-bar ul {
@@ -63,17 +63,18 @@
 .left-bar ul .nav-item {
   padding: 1.5vh;
   margin: 1vh;
-  overflow: hidden;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.left-bar ul .nav-item:hover {
+  opacity: .5;
 }
 
 .left-bar ul .nav-item a {
+  font: 'Roboto', sans-serif;
   text-decoration: none;
   color: #f2f2f2;
-  font-family: 'Roboto', serif;
-}
-
-.left-bar ul .nav-item em {
-  font-size: 100%;
 }
 
 .left-bar .signout {
@@ -90,30 +91,25 @@
   opacity: .5;
 }
 
-.active {
+.left-bar .active {
+  padding: 1.5vh;
+  margin: 1vh;
   background: #e63946;
   border-radius: 1em;
 }
 
-.active span {
+.left-bar .active a {
+  font: 'Roboto', sans-serif;
   color: #f2f2f2;
-}
-
-.space {
-  margin-top: 2.5vh;
-  height: 1.5vh;
-  background: #1f1f1f;
-  /* REGISTRO */
+  text-decoration: none;
 }
 
 section.reg {
-  color: #141414;
+  height: 95vh;
 }
 
 section.reg form {
-  width: 45%;
   padding: 3vh;
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -133,17 +129,21 @@ section.reg form h3 {
 
 section.reg form input {
   float: left;
-  border-radius: 1.5vh;
-  width: 50px;
   margin: 1vh;
   padding: 1vh;
   border: hidden;
   background: #e4e4e4;
-  -webkit-transition: background .2s ease;
-  transition: background .2s ease;
+  border-radius: 1.2vh;
+  width: 20vw;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
 }
 
-section.reg form input:hover {
+section.reg form input:valid {
+  border-bottom: #399e5a 3px solid;
+}
+
+section.reg form input:hover, section.reg form input:focus {
   background: #b8b8b8;
 }
 
@@ -181,13 +181,6 @@ section.reg form input[id='sus'] {
 
 section.reg form input[id='bairro'] {
   width: 30vw;
-}
-
-section.reg form input:valid {
-  border: solid 1px #399e5a;
-  background-image: url(assets/check.svg);
-  background-repeat: no-repeat;
-  background-position: 95% center;
 }
 
 section.reg span.botoes {
@@ -237,5 +230,13 @@ section.reg span.botoes input[type='reset']:hover {
 section.reg span.botoes input[type='reset']:active {
   -webkit-transform: scale(1);
           transform: scale(1);
+}
+
+em.suporte {
+  font-size: 2em;
+  float: right;
+  -webkit-transform: translateX(-2.5vh) translateY(-5vh);
+          transform: translateX(-2.5vh) translateY(-5vh);
+  color: #e63946;
 }
 /*# sourceMappingURL=dash.css.map */

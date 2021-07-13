@@ -3,13 +3,15 @@
   padding: 0
   outline: none
   box-sizing: border-box
-  font-family: "Open Sans", sans-serif
+  font-family: 'Open Sans', sans-serif;
   user-select: none
 
 $txt-color: #f2f2f2
 $redlight: #e63946
-$gray: #141414; $gray-light: #1f1f1f
-$bg-input: #e4e4e4; $hover-input: #b8b8b8
+$gray: #141414
+$gray-light: #1f1f1f
+$bg-input: #e4e4e4
+$hover-input: #b8b8b8
 $green-light: #399e5a
 
 /* font-family: 'Open Sans', sans-serif;
@@ -22,10 +24,9 @@ $green-light: #399e5a
 /* SIDEBAR
 
 .bi-gear-fill, 
-.bi-people-fill, 
-.bi-speedometer, 
-.bi-info-lg, 
-.bi-archive-fill
+.bi-speedometer,
+.bi-person-circle,
+.bi-people-fill
   margin-right: 5px
   color: $txt-color
 
@@ -47,14 +48,13 @@ $green-light: #399e5a
     .nav-item
       padding: 1.5vh
       margin: 1vh
-      overflow: hidden
+      transition: .5s ease
+      &:hover
+        opacity: .5
       a
+        font: 'Roboto', sans-serif
         text-decoration: none
         color: $txt-color
-        font-family: 'Roboto', serif
-      em
-        font-size: 100%
-        
   .signout
     border-radius: 5px
     color: $redlight
@@ -64,27 +64,22 @@ $green-light: #399e5a
     text-decoration: none
     &:hover
       opacity: .5
-
-.active
-  background: $redlight
-  border-radius: 1em
-  span
-    color: $txt-color
-
-.space
-  margin-top: 2.5vh
-  height: 1.5vh
-  background: $gray-light
-
+  .active
+    padding: 1.5vh
+    margin: 1vh
+    background: $redlight
+    border-radius: 1em
+    a
+      font: 'Roboto', sans-serif
+      color: $txt-color
+      text-decoration: none
 
   /* REGISTRO
 
 section.reg
-  color: $gray
+  height: 95vh
   form
-    width: 45%
     padding: 3vh
-    height: 100vh
     display: flex
     flex-direction: column
     transition: .5s ease
@@ -94,14 +89,16 @@ section.reg
       margin-left: 1.1vh
     input
       float: left
-      border-radius: 1.5vh
-      width: 50px
       margin: 1vh
       padding: 1vh
       border: hidden
       background: $bg-input
-      transition: background .2s ease
-      &:hover
+      border-radius: 1.2vh
+      width: 20vw
+      transition: .2s ease
+      &:valid
+        border-bottom: $green-light 3px solid
+      &:hover, &:focus
         background: $hover-input
       &[id='nam']
         width: 30vw
@@ -121,11 +118,6 @@ section.reg
         width: 20vw
       &[id='bairro']
         width: 30vw
-      &:valid
-        border: solid 1px $green-light
-        background-image: url(assets/check.svg)
-        background-repeat: no-repeat 
-        background-position: 95% center
 
   span.botoes
     margin-top: 5vh
@@ -156,3 +148,8 @@ section.reg
         border: 3px $redlight solid
       &:active
         transform: scale(1)
+em.suporte
+  font-size: 2em
+  float: right
+  transform: translateX(-2.5vh) translateY(-5vh)
+  color: $redlight
